@@ -1,7 +1,7 @@
-let start = process.argv[2] || 2;
+let start = process.argv[2] || 2; //421
 let end = process.argv[3] || 457;
 
-//6
+//6 поиск простых чисел
 function primeNumbers(start, end) {
     let primes = [];
     for (let i = start; i <= end; i++) {
@@ -17,7 +17,8 @@ function isPrime(i) {
     return true;
 }
 
-//1, 2
+//1 Подсчитать количество простых чисел в указанном интервале. 
+//2  Повторить для интервала [m, n].
 let primes = primeNumbers(start, end);
 console.log(end/Math.log(end))
 console.log(`${start}-${end} (${primes.length}): ${primes.join(' ')}`)
